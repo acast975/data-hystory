@@ -1,0 +1,21 @@
+{
+  "name": "praksa",
+  "version": "1.0.0",
+  "description": "Server that reads data from OracleDB and return it on request, also it can send automatic updates over sockets.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "OracleDB",
+    "SocketIO"
+  ],
+  "author": "Nikola Stafanovic",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4",
+    "oracledb": "^1.8.0",
+    "socket.io": "^1.4.6"
+  }
+}
