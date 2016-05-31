@@ -131,16 +131,12 @@ app.post("/loc-read-time", function(req, res, next){
 function sendResultDecision(location_id){
     var probability;
 
-    console.log(JSON.stringify(returnResultProbability));
     probability = returnResultProbability[location_id];
 
     if(!probability)
       probability = returnResultProbabilityDefault;
 
-    console.log("probability: " + probability);
     var rand = Math.random();
-    console.log("random: " + rand);
-
     if(rand<probability)
       return true;
     else

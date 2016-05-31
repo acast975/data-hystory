@@ -68,4 +68,9 @@ Click *OK* on the following two windows to finish saving and closing the dialog 
 ```
 npm install
 ```
+
+If successful, your results should look similar to the below:
+
+![Installation console output](/assets/readme/installation_console_output.png?raw=true "Installation console output")
+
 This will install application dependencies including *oracledb*. When installation is finished you can start applicatoin.

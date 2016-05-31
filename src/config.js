@@ -14,13 +14,13 @@ config.oracledb.con_str = {
 //server configuration
 
 //max number of rows in result
-config.server.maxNumOfRows = 10; //set -1 for unlimited
+config.server.maxNumOfRows = -1; //set -1 for unlimited
 
 //Define ignore request (GET or POST) probability for
 //locations or default value will be used instead.
-config.server.returnResultProbabilityDefault = 0.8;
+config.server.returnResultProbabilityDefault = 1.0
 var returnResultProbability = {};
-returnResultProbability["41"] = 0.3;
+returnResultProbability["41"] = 0.8;
 returnResultProbability["42"] = 0.6; 			
 
 config.server.returnResultProbability = returnResultProbability;

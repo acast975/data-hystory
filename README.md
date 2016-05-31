@@ -56,17 +56,20 @@ Date can be in any format that the javascript constructor *new Date(date)* can p
 
 #####Configuration
 
-  Application can ignore HTTP requests with specific probability. To set probabliity open *src/config.js* and assigne value to: 
-  ```
-  config.server.returnResultProbabilityDefault = 0.8;
-  ```
- If you do not want to ignore any request set it to to 1.0.
+Application can ignore HTTP requests with specific probability. To set probabliity open *src/config.js* and assigne value to: 
+```
+config.server.returnResultProbabilityDefault = 0.8;
+```
+If you do not want to ignore any request set it to to 1.0.
  
 You can set a different probability for each location. For exmaple, to ignore all request for location with *id=90* with probability of 0.3 add next line in *config.js*:
 ```
 returnResultProbability["90"] = 0.7;
 ```
-
+You can limit number of rows in result:
+```
+config.server.maxNumOfRows = 10; 
+```
 ####Publisher
 
 This application can read rows from database and send it, in sequential order using *read_time* column, to another node js application.
