@@ -80,6 +80,6 @@ locationsUpdates["41"] = {interval: 15, probability: 0.8};
 0.8 - there is 20 chance to skip udate
 ```
 
-Here is [demo subscriber](demos)  that shows how to receive updates.
+Here is [demo subscriber](subscriber)  that shows how to receive updates.
 ## License
 MIT
