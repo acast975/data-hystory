@@ -17,7 +17,9 @@ This will install application dependencies including *oracledb*. When installati
 
 ## Running
 
-Before you start server you need to setup connection to oracle database. Open *src/config.js* file and set username, password and connection string to your database.
+Import [data-history database](assets/database.sql) into your oracle database and add indexes to columns *location_id* and *read_time*.
+
+Before you start the server you need to setup connection to oracle database. Open *src/config.js* file and set username, password and connection string to your database.
 ```javascript
 config.oracledb.con_str = {  
      user: "s14518",  
